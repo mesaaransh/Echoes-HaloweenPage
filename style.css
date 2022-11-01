@@ -1,3 +1,19 @@
+
+@font-face {
+    font-family: "Halloween";
+    src: url("./fonts/CreepyPumkin.ttf");
+}
+
+@font-face {
+    font-family: "horror";
+    src: url("./fonts//Zombie_Holocaust.ttf");
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +24,8 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+
+    background-color: #03030b;
 }
 
 .one {
@@ -17,37 +35,118 @@ body {
     align-items: center;
     height: 120%;
     transform-style: preserve-3d;
-    z-index: -1;
+    z-index: -5;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .nav{
     height: 80px;
-    background-color: teal;
+    background-color: #03030b;
+
+    box-shadow: 0 10px 20px 5px rgba(3, 3, 11, .7);
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
 }
 
+.logo{
+    width: 150px;
+}
+
+.navlist{
+    margin-left: auto;
+    color: aliceblue;
+
+    display: flex;
+}
+
+.navlink{
+    width: 150px;
+    color: aliceblue;
+
+    font-family: halloween, Courier, monospace;
+    font-size: 2rem;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition-duration: .2s;
+}
+
+
+.navlink:hover{
+    color: rgb(255, 136, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .l1 {   
-    transform: translateZ(-50px) translateX(-50px) scale(6);
+    transform: translateZ(-50px) scale(6.25);
 }
 
 .l2 {
     margin-top: 1000px;
-    transform: translateZ(-40px) translateX(-50px) scale(5);
+    transform: translateZ(-40px) scale(5.25);
 }
 
 .l3 {
-    margin-top: 800px;
-    transform: translateZ(-30px) translateX(-50px) scale(4);
+    margin-top: 00px;
+    transform: translateZ(-5px) scale(1.75);
 }
 
 .l4 {
     margin-top: 0%;
-    transform: translateZ(-5px) translateX(-50px) scale(1.5);
+    transform: translateZ(-5px) scale(1.5);
 }
 
 .l5 {
     transform: translateZ(0px) scale(1);
 }
-
 
 
 .l1,.l2,.l3,.l4,.l5{
@@ -58,16 +157,275 @@ body {
     z-index: -1;
 }
 
-.title {
-    font-size: 7rem;
-    color: white;
-    text-shadow: 0 0 5px black;
+.v-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: -200px;
 }
 
-section {
+.subtitle {
+    font-size: 4rem;
+    
+    color: #03030b;
+
+    font-family: Halloween;
+}
+
+.title {
+    font-size: 8rem;
+    
+    margin-top: -50px;
+    color: #03030b;
+
+    font-family: Halloween;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.two {
     margin-top: -5px;
     font-size: 2rem;
     padding: 2rem;
     background-color: #03030b;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 100px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.twohead{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.seperator{
+    width: 200px;
+    height: 10px;
+
+    border-radius: 100px;
+
+    background-color: rgb(255, 136, 0);
+
+    border: 0px solid;
+    margin-top: -20px;
+}
+
+.twotext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.three {
+    margin-top: -5px;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #03030b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding-bottom: 200px;
+
+}
+
+.threehead{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 40%;
+}
+
+.credcont{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    border-radius: 100px;
+    width: 400px;
+    height: 30px;
+
+    border: 2px solid black;
+
+    padding: 10px 10px;
+}
+
+button{
+    border-radius: 100px;
+    width: 420px;
+    height: 60px;
+
+    background-color: rgb(255, 136, 0);
+
+    margin-top: 40px;
+    cursor: pointer;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+
+    transition-duration: .2s;
+}
+
+button:hover{
+    background-color: rgb(197, 105, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vseperator{
+    height: 100px;
+    width: 10px;
+
+    border-radius: 100px;
+
+    background-color: rgb(255, 136, 0);
+
+    border: 0px solid;
+    margin: 0 20px;
+}
+
+.fourhead{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 40%;
+}
+
+.four {
+    margin-top: -5px;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #03030b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.fourtext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    height: 400px;
+    background-color: #03030b;
+
+    padding: 0 100px;
+}
+
+.contactcont{
+    display: flex;
+    height: 100%;
+}
+
+.sec1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.sec2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+textarea{
+    width: 400px;
+    height: 100%;
+
+    border-radius: 20px;
 }
