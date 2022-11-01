@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+  
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.one {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.nav{
+    height: 80px;
+    background-color: teal;
+}
+
+.l1 {   
+    transform: translateZ(-50px) translateX(-50px) scale(6);
+}
+
+.l2 {
+    margin-top: 1000px;
+    transform: translateZ(-40px) translateX(-50px) scale(5);
+}
+
+.l3 {
+    margin-top: 800px;
+    transform: translateZ(-30px) translateX(-50px) scale(4);
+}
+
+.l4 {
+    margin-top: 0%;
+    transform: translateZ(-5px) translateX(-50px) scale(1.5);
+}
+
+.l5 {
+    transform: translateZ(0px) scale(1);
+}
+
+
+
+.l1,.l2,.l3,.l4,.l5{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.title {
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+section {
+    margin-top: -5px;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #03030b;
+    color: white;
+}
