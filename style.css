@@ -126,11 +126,6 @@ body {
 
 
 
-
-
-
-
-
 .l1 {   
     transform: translateZ(-50px) scale(6.25);
 }
@@ -404,9 +399,7 @@ button:hover{
     height: 400px;
     background-color: #03030b;
 
-    padding: 0 100px;
-
-    padding-bottom: 500px;
+    padding: 0 150px;
 }
 
 .contactcont{
@@ -436,4 +429,18 @@ textarea{
     height: 100%;
 
     border-radius: 20px;
+}
+
+
+.last{
+    height: 500px;
+    background-color: #03030b;
+
+    display: flex;
+    
+}
+
+.lastimg{
+    object-fit: cover;
+    width: 100%;
 }
